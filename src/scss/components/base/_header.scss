@@ -1,0 +1,81 @@
+/* Header */
+
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 2rem 10%;
+  display: flex;
+  align-items: center;
+
+  box-shadow: $box-shadow;
+  background-color: $white;
+
+  z-index: 1000;
+
+  .logo {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+
+    @include titleText(2.5rem);
+    font-weight: bolder;
+
+    i {
+      @include titleText(3rem);
+      color: $green;
+    }
+  }
+
+  .navbar {
+    position: relative;
+
+    transition: all 0.7s ease-in-out;
+
+    #close-nav {
+      position: absolute;
+      top: 1.5rem;
+      right: 2rem;
+      display: none;
+
+      font-size: 3rem;
+      color: black;
+
+      cursor: pointer;
+
+      &:hover {
+        transform: rotate(180deg);
+      }
+    }
+
+    a {
+      margin-right: 2rem;
+
+      @include titleText(2rem);
+
+      &:hover {
+        color: $green;
+      }
+    }
+  }
+
+  .icons {
+    div {
+      margin-left: 1.5rem;
+
+      font-size: 2.5rem;
+      color: $black;
+
+      cursor: pointer;
+
+      &:hover {
+        color: $green;
+      }
+    }
+
+    #open-nav {
+      display: none;
+    }
+  }
+}

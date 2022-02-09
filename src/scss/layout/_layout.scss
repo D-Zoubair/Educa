@@ -1,0 +1,10 @@
+section {
+    padding: 5rem 10%;
+}
+
+.section__title {
+    margin-bottom: 3rem;
+    @include titleText(3.5rem);
+    text-align: center;
+}
+

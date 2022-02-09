@@ -1,0 +1,32 @@
+.hero {
+  padding: 0;
+
+  .slide {
+    display: flex;
+    align-items: center;
+    height: 60rem;
+
+    background-size: cover !important;
+    background-position: center !important;
+
+    .content {
+      width: 50rem;
+
+      h3 {
+        @include titleText(5.5rem);
+        color: $white;
+      }
+
+      p {
+        padding: 1rem 0;
+
+        @include graphText(1.6rem);
+        color: $light-white;
+      }
+    }
+  }
+}
+
+.swiper-pagination-bullet-active {
+  background: $green !important;
+}

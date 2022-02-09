@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="assets/favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="assets/favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" type="text/css" href="src/css/main.css" />
+
+    <!-- Boxicons CSS -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Import Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+
+    <title>Educa | Home</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <a href="/" class="logo"><i class="bx bxs-bulb"></i> educa</a>
+
+      <nav class="navbar">
+        <div id="close-nav" class="bx bx-x"></div>
+        <a href="index.html">home</a>
+        <a href="about.html">about</a>
+        <a href="courses.html">courses</a>
+        <a href="contact.html">contact</a>
+      </nav>
+
+      <div class="icons">
+        <div id="open-logReg" class="bx bxs-user"></div>
+        <div id="open-nav" class="bx bx-menu"></div>
+      </div>
+    </header>
+
+    <!-- Account -->
+    <div class="account-form">
+      <div id="close-logReg" class="bx bx-x"></div>
+
+      <div class="buttons">
+        <span class="btn login-btn active" id="btn-login">login</span>
+        <span class="btn register-btn" id="btn-register">register</span>
+      </div>
+
+      <!-- Login form starts -->
+      <form action="#" class="login-form active" id="login">
+        <h3>login</h3>
+        <input type="email" placeholder="enter your email" class="box" />
+        <input type="password" placeholder="enter your password" class="box" />
+
+        <div class="flex">
+          <input type="checkbox" id="remember-me" />
+          <label for="remember-me">remember me</label>
+          <a href="#">forgot password?</a>
+        </div>
+        <input type="submit" value="login now" class="btn" />
+      </form>
+
+      <!-- Login form ends -->
+
+      <!-- Register form starts -->
+      <form action="#" class="register-form" id="register">
+        <h3>register</h3>
+        <input type="email" placeholder="enter your email" class="box" />
+        <input type="password" placeholder="enter your password" class="box" />
+        <input
+          type="password"
+          placeholder="confirm your password"
+          class="box"
+        />
+        <input type="submit" value="register now" class="btn" />
+      </form>
+      <!-- Register form ends -->
+    </div>
+
+
+    <!-- Footer -->
+    <section class="footer">
+      <div class="box-container">
+        <div class="box">
+          <h3><i class="bx bxs-bulb"></i> educa</h3>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Temporibus, alias.
+          </p>
+          <div class="share">
+            <a href="#" class="bx bxl-facebook"></a>
+            <a href="#" class="bx bxl-twitter"></a>
+            <a href="#" class="bx bxl-instagram"></a>
+            <a href="#" class="bx bxl-linkedin"></a>
+          </div>
+        </div>
+
+        <div class="box">
+          <h3>quick links</h3>
+          <a href="index.html" class="link">Home</a>
+          <a href="about.html" class="link">About</a>
+          <a href="courses.html" class="link">Courses</a>
+          <a href="contact.html" class="link">Contact</a>
+        </div>
+
+        <div class="box">
+          <h3>useful links</h3>
+          <a href="#" class="link">Help center</a>
+          <a href="#" class="link">Ask questions</a>
+          <a href="#" class="link">Send feedback</a>
+          <a href="#" class="link">Private policy</a>
+          <a href="#" class="link">Terms of use</a>
+        </div>
+
+        <div class="box">
+          <h3>newsletter</h3>
+          <p>Subscribe for latest updates</p>
+
+          <form action="">
+            <input type="email" placeholder="Enter your email" class="email" />
+            <input type="submit" value="Subscribe" class="btn" />
+          </form>
+        </div>
+      </div>
+
+      <div class="credit">
+        created by <span>ZheCoder</span> | all right reserved
+      </div>
+    </section>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <!-- Main JS -->
+    <script src="src/js/main.js"></script>
+  </body>
+</html>
