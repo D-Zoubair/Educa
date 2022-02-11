@@ -1,0 +1,58 @@
+.reviews {
+  .slide {
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    width: 30rem;
+
+    text-align: center;
+
+    cursor: grab;
+
+    p {
+      position: relative;
+      margin-bottom: 3rem;
+      padding: 2rem;
+
+      border: $border;
+
+      background-color: $light-green;
+
+      @include graphText(1.5rem);
+
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: -1.2rem;
+        left: 50%;
+        transform: translateX(-50%) rotate(45deg);
+        height: 2rem;
+        width: 2rem;
+
+        border-bottom: $border;
+        border-right: $border;
+
+        background-color: $light-green;
+      }
+    }
+
+    img {
+      height: 7rem;
+      width: 7rem;
+
+      border-radius: 50%;
+    }
+
+    h3 {
+      padding: 0.5rem 0;
+
+      @include titleText(2.2rem);
+    }
+
+    .stars {
+      font-size: 1.2rem;
+      color: $green;
+    }
+  }
+
+}

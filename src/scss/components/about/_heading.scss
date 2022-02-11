@@ -1,23 +1,23 @@
 .heading-link {
-    background: url(../../../assets/images/heading-bg.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
+  background: url(../../../assets/images/heading-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
 
-    text-align: center;
+  text-align: center;
 
-    h3 {
-        @include titleText(4rem);
+  h3 {
+    @include titleText(4rem);
+  }
+
+  p {
+    @include graphText(2rem);
+
+    a {
+      color: $green;
+
+      &:hover {
+        text-decoration: underline;
+      }
     }
-
-    p {
-        @include graphText(2rem);
-
-        a {
-            color: $green;
-
-            &:hover {
-                text-decoration: underline;
-            }
-        }
-    }
+  }
 }

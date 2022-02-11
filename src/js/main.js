@@ -45,6 +45,7 @@ closeLogReg.onclick = () => {
   loginRegisterForm.classList.remove("active");
 };
 
+// Swiper
 var swiper = new Swiper(".hero__silder", {
   pagination: {
     el: ".swiper-pagination",
@@ -70,3 +71,46 @@ var swiper = new Swiper(".courses__slider", {
     },
   },
 });
+
+var swiper = new Swiper(".teachers__slider", {
+  loop: true,
+  grapCursor: true,
+  spaceBetween: 20,
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    991: {
+      slidesPerView: 3,
+    },
+  },
+});
+
+var swiper = new Swiper(".reviews__slider", {
+  loop: true,
+  grapCursor: true,
+  spaceBetween: 20,
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    991: {
+      slidesPerView: 3,
+    },
+  },
+});
+
+let box = document.querySelector(".courses .box-container .hide");
+
+document.querySelector(".load-more .btn").onclick = () => {
+  document.querySelectorAll(".courses .box-container .hide").forEach((show) => {
+    show.style.display = "block";
+  });
+  document.querySelector(".load-more .btn").style.display = "none";
+};

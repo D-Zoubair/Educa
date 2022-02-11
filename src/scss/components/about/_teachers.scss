@@ -1,0 +1,68 @@
+.teachers {
+  .slide {
+    width: 30rem;
+
+    text-align: center;
+
+    cursor: grab;
+
+    &:hover {
+      .image {
+        img {
+          background-color: $green;
+        }
+
+        .share {
+          bottom: 0;
+        }
+      }
+    }
+
+    .image {
+      position: relative;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+
+        background-color: $light-green;
+      }
+
+      .share {
+        position: absolute;
+        bottom: -10rem;
+        left: 0;
+        right: 0;
+        padding: 2rem;
+
+        background-color: rgba(0, 0, 0, 0.8);
+
+        a {
+          margin: 0 1rem;
+
+          font-size: 3rem;
+          color: $white;
+
+          &:hover {
+            color: $green;
+          }
+        }
+      }
+    }
+
+    .content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 1rem;
+
+      h3 {
+        @include titleText(2rem);
+      }
+
+      span {
+        @include graphText(1.5rem);
+      }
+    }
+  }
+}
