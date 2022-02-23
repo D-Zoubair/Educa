@@ -871,6 +871,117 @@ section {
   text-align: center;
 }
 
+.contact .icons-container {
+  margin-bottom: 8rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 2rem;
+}
+
+.contact .icons-container .icons {
+  padding: 3rem 2rem;
+  border: 0.1rem solid #0EB582;
+  background-color: #F0FDFA;
+  text-align: center;
+}
+
+.contact .icons-container .icons i {
+  height: 6rem;
+  width: 6rem;
+  margin-bottom: 0.5rem;
+  border-radius: 50%;
+  background-color: #0EB582;
+  font-size: 2rem;
+  color: #FFF;
+  line-height: 6rem;
+}
+
+.contact .icons-container .icons h3 {
+  padding: 0.5rem 0;
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: #444;
+}
+
+.contact .icons-container .icons p {
+  font-size: 1.5rem;
+  line-height: 2;
+  color: #777;
+}
+
+.contact .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.contact .row .image {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+}
+
+.contact .row .image img {
+  width: 100%;
+}
+
+.contact .row form {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+  padding: 3rem;
+  border: 0.1rem solid #0EB582;
+}
+
+.contact .row form h3 {
+  padding-bottom: 1rem;
+  font-size: 2.5rem;
+  text-transform: capitalize;
+  color: #444;
+}
+
+.contact .row form .box {
+  width: 100%;
+  padding: 1.2rem 1.4rem;
+  margin: 0.7rem 0;
+  border: 0.1rem solid #0EB582;
+  font-size: 1.6rem;
+}
+
+.contact .row form .box:focus {
+  background-color: #0EB582;
+  color: #FFF;
+}
+
+.contact .row form .box:focus::-webkit-input-placeholder {
+  color: #EEE;
+}
+
+.contact .row form .box:focus:-ms-input-placeholder {
+  color: #EEE;
+}
+
+.contact .row form .box:focus::-ms-input-placeholder {
+  color: #EEE;
+}
+
+.contact .row form .box:focus::placeholder {
+  color: #EEE;
+}
+
+.contact .row form textarea {
+  height: 15rem;
+  resize: none;
+}
+
 /* Footer */
 .footer {
   background-color: #F0FDFA;

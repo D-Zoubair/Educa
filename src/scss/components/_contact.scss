@@ -1,0 +1,88 @@
+.contact {
+  .icons-container {
+    margin-bottom: 8rem;
+    @include grid(25rem);
+
+    .icons {
+      padding: 3rem 2rem;
+      border: $border;
+      background-color: $light-green;
+
+      text-align: center;
+
+      i {
+        height: 6rem;
+        width: 6rem;
+        margin-bottom: 0.5rem;
+
+        border-radius: 50%;
+
+        background-color: $green;
+
+        font-size: 2rem;
+        color: $white;
+        line-height: 6rem;
+      }
+
+      h3 {
+        padding: 0.5rem 0;
+        @include titleText(2rem);
+      }
+
+      p {
+        @include graphText(1.5rem);
+      }
+    }
+  }
+
+  .row {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 2rem;
+
+      .image {
+          flex: 1 1 40rem;
+
+          img {
+              width: 100%;
+          }
+      }
+
+      form {
+          flex: 1 1 40rem;
+          padding: 3rem;
+          
+          border: $border;
+
+          h3 {
+              padding-bottom: 1rem;
+              @include titleText(2.5rem);
+          }
+
+          .box {
+              width: 100%;
+              padding: 1.2rem 1.4rem;
+              margin: 0.7rem 0;
+
+              border: $border;
+
+              font-size: 1.6rem;
+
+              &:focus {
+                  background-color: $green;
+                  color: $white;
+
+                  &::placeholder {
+                      color: $light-white;
+                  }
+              }
+          }
+
+          textarea {
+              height: 15rem;
+              resize: none;
+          }
+      }
+  }
+}
